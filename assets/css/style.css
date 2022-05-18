@@ -1,0 +1,214 @@
+/* Source */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  font-family: Helvetica, Arial, sans-serif;
+}
+a {
+  color: #000;
+  text-decoration: #000;
+}
+a:hover {
+  color: #000;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style-type: none;
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url(/assets/fonts/Poppins/Poppins-Medium.ttf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url(/assets/fonts/Poppins/Poppins-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url(/assets/fonts/Poppins/Poppins-SemiBold.ttf);
+  font-weight: 600;
+}
+body {
+  font-family: 'Poppins';
+  font-size: 16px;
+  font-weight: normal;
+}
+.medy-container {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.medy-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+.medy-col {
+  box-sizing: border-box;
+  padding: 0 15px;
+}
+.medy-col .medy-col-1 {
+  width: 100%;
+  max-width: calc(100% / 12);
+}
+.medy-col .medy-col-2 {
+  width: 100%;
+  max-width: calc(100% / 12 * 2);
+}
+.medy-col .medy-col-3 {
+  width: 100%;
+  max-width: calc(100% / 12 * 3);
+}
+.medy-col .medy-col-4 {
+  width: 100%;
+  max-width: calc(100% / 12 * 4);
+}
+.medy-col .medy-col-5 {
+  width: 100%;
+  max-width: calc(100% / 12 * 5);
+}
+.medy-col .medy-col-6 {
+  width: 100%;
+  max-width: calc(100% / 12 * 6);
+}
+.medy-col .medy-col-7 {
+  width: 100%;
+  max-width: calc(100% / 12 * 7);
+}
+.medy-col .medy-col-8 {
+  width: 100%;
+  max-width: calc(100% / 12 * 8);
+}
+.medy-col .medy-col-9 {
+  width: 100%;
+  max-width: calc(100% / 12 * 9);
+}
+.medy-col .medy-col-10 {
+  width: 100%;
+  max-width: calc(100% / 12 * 10);
+}
+.medy-col .medy-col-11 {
+  width: 100%;
+  max-width: calc(100% / 12 * 11);
+}
+.medy-col .medy-col-12 {
+  width: 100%;
+  max-width: 100%;
+}
+.dropdowncontent {
+  display: none;
+}
+/* Header */
+.header-top {
+  height: 72px;
+  background-color: #222;
+  color: #bababa;
+  font-size: 12px;
+  font-weight: 500;
+}
+.header-top-inner {
+  display: flex;
+  justify-content: space-between;
+}
+.header-top-inner .info-list {
+  display: flex;
+}
+.header-top-inner .info-list .info-item {
+  display: flex;
+  margin-right: 22px;
+}
+.header-top-inner .info-list .info-item .info-icon {
+  font-size: 16px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #0ca8c9;
+  color: #0ca8c9;
+  text-align: center;
+  line-height: 30px;
+  margin-right: 10px;
+}
+.header-top-inner .info-list .info-item .info-text {
+  color: #bababa;
+  line-height: 1.5;
+  margin-top: 18px;
+  letter-spacing: 0.15px;
+}
+.header-top-inner .info-list .info-item .info-text .info-cont {
+  color: #fff;
+  font-weight: 400;
+}
+.header-top-inner .sl-languge img {
+  width: 17px;
+}
+.header-top-inner .sl-languge .dropdowncontent {
+  display: none;
+}
+.header-bot {
+  height: 99px;
+}
+.header-bot .cate-list {
+  display: flex;
+}
+.header-bot .cate-list .logo {
+  margin-top: 26px;
+}
+.header-bot .cate-list .category {
+  display: flex;
+  align-self: self-start;
+  margin-left: auto;
+  margin-top: 26px;
+  margin-right: 6px;
+}
+.header-bot .cate-list .category .cate-search {
+  display: flex;
+  margin-right: 6px;
+}
+.header-bot .cate-list .category .cate-search .option {
+  display: flex;
+}
+.header-bot .cate-list .category .cate-search .search-opt {
+  width: 342px;
+  margin-top: 3px;
+  padding: 0 17px;
+  letter-spacing: 0.2px;
+  border: none;
+  border: 1px solid #ebebeb;
+}
+.header-bot .cate-list .category .cate-search .search-opt::placeholder {
+  font-size: 12px;
+  font-family: "Poppins";
+  font-weight: 500;
+  color: #8f8f8f;
+}
+.header-bot .cate-list .category .cate-search .cate-icon {
+  font-size: 18px;
+  margin-top: 3px;
+  width: 57px;
+  height: 40px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: #0ca8c9;
+  text-align: center;
+}
+.header-bot .cate-list .category .cate-search .cate-icon .search-icon {
+  color: #fff;
+  margin-left: -7px;
+  margin-top: 9px;
+}
+.header-bot .cate-list .category .icon {
+  margin-top: 10px;
+}
+.header-bot .cate-list .category .icon .setting-icon {
+  margin: 0 15px;
+}
+/*# sourceMappingURL=style.css.map */
